@@ -10,6 +10,7 @@ Esse é um Web Site estático responsivo do Cinestream, uma plataforma de stream
 
 ## 🎥 Cine Stream
 ![img-cine-stream](https://github.com/user-attachments/assets/6e5a7531-b558-4323-89da-79766e5f62c1)
+[Deploy Cine Stream](https://arthurscarpin.github.io/cinestream/)
 
 ## 🎬 Técnicas de design
 - HTML semantico;

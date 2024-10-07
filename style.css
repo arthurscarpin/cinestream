@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --white-main: #FFFFFF;
+    --grey-secondary: #C0C0C0;
+    --button-blue: #167BF7;
+    --button-blue-effect: #3C92FA;
+    --background-color: #00030C;
+    --logo-color: #ec2f46;
+    --font-main: "Inter", sans-serif;
+    --font-logo: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--white-main);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main {
+    background-image: url("./assets/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_logo {
+    margin: 1em 0 2em 0;
+    padding-left: 2%;
+    font-family: var(--font-logo);
+    font-size: 40px;
+}
+
+.container_logo_mini {
+    font-family: var(--font-logo);
+    font-size: 20px;
+}
+
+.highlight_logo { 
+    font-weight: 400;
+    color: var(--logo-color);
+}
+
+.combo {
+    font-size: 55px;
+    display: block; 
+    font-weight: 600;
+}
+
+.combo_mini {
+    font-size: 25px;
+    display: block; 
+    font-weight: 600;
+}
+
+.container__button {
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--white-main);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.custom_button {
+    background-color: var(--button-blue);
+}
+
+.custom_button:hover {
+    background-color: var(--button-blue-effect);
+}
+
+.button_secondary {
+    background-color: transparent;
+    border: 2px solid var(--white-main);
+}
+
+.button_secondary:hover {
+    color: var(--logo-color);
+    border-color: var(--logo-color);
+}
+
+.container__warning {
+    font-size: 12px;
+    color: var(--grey-secondary);
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secondary__image {
+    width: 80%;
+}
+
+.description__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--white-main);
+    margin-bottom: 0.1em;
+}
+
+.description__text {
+    color: var(--grey-secondary);
+    max-width: 450px;
+    text-align: justify;
+}
+
+.custom_image {
+    border-radius: 5px;
+}
+
+.secondary__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-size:  48px;
+    color: var(--white-main);
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.list__item {
+    font-size:  32px;
+    color: var(--white-main);
+}
+
+.footer {
+    text-align: center;
+    margin: 0 3em;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    list-style-type: none;
+    margin: 1.5em 0;
+}
+
+.list__link {
+    color: var(--white-main);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer_text {
+    color: var(--white-main);
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+
+.list__link:hover {
+    color: var(--grey-secondary);  
+}
+
+.list__link:active {
+    color: var(--logo-color);
+}
+
+@media (max-width: 1020px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .column_reverse {
+        flex-direction: column-reverse;
+    }
+
+    .secondary {
+        margin: 5em 2em;
+    }
+
+    .container__description {
+        text-align: center;
+    }
+
+    .secondary__button {
+        margin: 2em;
+    }
+
+    .description__title {
+        text-align: center;
+    }
+
+    .description__text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .devices__list, 
+    .footer__list 
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .footer__list 
+    {
+        flex-direction: column;
+    }
+}
